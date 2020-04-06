@@ -1,0 +1,65 @@
+html {
+    font-size: 10px;
+}
+
+nav.top-menu {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3.2rem 0;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.logo>h1 {
+    font-style: normal;
+    margin-left: 0.4rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.top-menu>ul {
+    display: flex;
+    /* width: 40%; */
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.top-menu>ul>li {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.top-menu>ul>li:nth-child(4) {
+    margin-left: 3.8rem;
+}
+
+.top-menu .signin-btn {
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.top-menu>ul>li:nth-child(5) {
+    margin-left: 1.6rem;
+}
+
+.top-menu .createaccount-btn {
+    padding: 0.4rem 1.2rem;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+    border: 1px solid #3C2DFF;
+    color: #3C2DFF;
+}
