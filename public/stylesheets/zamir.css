@@ -76,13 +76,17 @@ html {
 
 .job-list-desc_container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 5.4rem;
+  padding-top: 5.4rem;
 }
 
 .job-list-desc_text-wrapper {
   color: #fff;
   flex: 0 1 auto;
+  margin-right: 3rem;
   max-width: 507px;
 }
 
@@ -188,6 +192,7 @@ html {
 .testimonials_right-arrow {
   width: 100%;
   flex: 1;
+  cursor: pointer;
 }
 
 .testimonials_container {
@@ -230,6 +235,8 @@ html {
 
 .contact_container {
   font-family: "Overpass", sans-serif;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -297,6 +304,10 @@ html {
   margin-bottom: 19px;
 }
 
+.contact_form textarea::placeholder, .contact_form input::placeholder {
+  font-family: "Overpass", sans-serif;
+}
+
 .contact_btn {
   width: 197px;
   height: 60px;
@@ -308,6 +319,7 @@ html {
 }
 
 .contact_btn span {
+  font-family: "Overpass", sans-serif;
   margin-left: 20px;
 }
 
@@ -386,8 +398,8 @@ html {
 
   /* Contact */
   .contact_container {
-    padding: 50px 30px;
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   .contact_info {
