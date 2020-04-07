@@ -2,20 +2,25 @@ html {
   font-size: 10px;
 }
 
+body {
+  background: #f7fafc;
+}
+
+.landing-container {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
 /* Hero */
 .hero {
-  background: #f7fafc;
   height: 600px;
-  padding: 0 15%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero_info {
-  width: 50%;
-  min-width: 250px;
-  height: 50%;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +32,7 @@ html {
   font-size: 4.6rem;
   line-height: 63px;
   max-width: 361px;
+  margin-bottom: 20px;
 }
 
 .hero_info-description {
@@ -34,6 +40,7 @@ html {
   font-size: 2rem;
   line-height: 27px;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .hero_info .hero_btn {
@@ -56,8 +63,7 @@ html {
 }
 
 .hero_img {
-  width: 50%;
-  min-width: 250px;
+  flex: 1 1 0;
 }
 
 .hero_img img {
