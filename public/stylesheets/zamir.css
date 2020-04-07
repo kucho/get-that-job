@@ -344,4 +344,31 @@ html {
 
 /*** Mobile styles ***/
 @media (max-width: 768px) {
+  html {
+    font-size: 8.5px;
+  }
+
+  /* Hero */
+  .hero_container {
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+
+  .hero_info {
+    text-align: center;
+  }
+
+  .hero_info-title {
+    max-width: none;
+  }
+
+  .hero_info .hero_btn {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero_img {
+    width: 50%;
+  }
 }
