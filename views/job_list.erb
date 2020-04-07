@@ -1,0 +1,67 @@
+<div class="container main-px main-py">
+  <h1 class="job-list__title">Jobs for you</h1>
+  <div class="job-list__filters">
+    <div class="job-list__filters-left">
+      <div class="search-job">
+        <input
+          type="search"
+          name="search_job"
+          id="search_job"
+          placeholder="Find that job!"
+        />
+      </div>
+      <div class="job-list__select" tabindex="1">
+        Country
+        <ul class="submenu">
+          <li>
+            <a href="#">Peru</a>
+          </li>
+          <li>
+            <a href="#">Colombia</a>
+          </li>
+          <li>
+            <a href="#">Arequipa</a>
+          </li>
+        </ul>
+      </div>
+      <div class="job-list__select" tabindex="2">
+        Type
+        <ul class="submenu">
+          <li>Urgent</li>
+          <li>Normal</li>
+        </ul>
+      </div>
+      <div class="job-list__select" tabindex="3">
+        Salary Range
+        <ul class="submenu">
+          <li><a href="#">0 - 1,000</a></li>
+          <li><a href="#">1,001 - 2,000</a></li>
+          <li><a href="#">2,001 - 3,000</a></li>
+          <li><a href="#">+3,000</a></li>
+        </ul>
+      </div>
+      <div class="job-list__select" tabindex="4">
+        Experience
+        <ul class="submenu">
+          <li><a href="#">< 1 year</a></li>
+          <li><a href="#">1 - 2 years</a></li>
+          <li><a href="#">2 - 3 years</a></li>
+          <li><a href="#">+3 years</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job-list__select select-alt" tabindex="5">
+      Recomended
+      <ul class="submenu">
+        <li><a href="#">Newest</a></li>
+        <li><a href="#">Highest Salary</a></li>
+        <li><a href="#">Lowest Salary</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <% for i in 0..7 do %> <%= erb :"../components/job_item" %> <% end %>
+
+  <a class="main-button" href="#">Load more</a>
+</div>

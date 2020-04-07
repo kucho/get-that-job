@@ -9,7 +9,7 @@ header {
 }
 
 .container {
-    width: 80%;
+    max-width: 1031px;
     margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ nav.top-menu {
     margin-left: 3.8rem;
 }
 
-.top-menu .signin-btn {
+.signin-btn {
     border: 1px solid black;
     text-transform: uppercase;
     padding: 0.4rem 1.2rem;
@@ -63,11 +63,16 @@ nav.top-menu {
     font-size: 1.3rem;
 }
 
+.signin-btn:hover {
+    color: white;
+    background-color: black;
+}
+
 .top-menu>ul>li:nth-child(5) {
     margin-left: 1.6rem;
 }
 
-.top-menu .createaccount-btn {
+.createaccount-btn {
     padding: 0.4rem 1.2rem;
     text-transform: uppercase;
     border-radius: 0.4rem;
@@ -77,13 +82,18 @@ nav.top-menu {
     color: #3C2DFF;
 }
 
+.createaccount-btn:hover {
+    color: white;
+    background-color: #3C2DFF;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 8.5px !important;
     }
     nav.top-menu {
         width: 100%;
-        padding: 0.5rem;
+        padding: 2rem;
     }
     .top-menu>ul {
         flex-wrap: wrap;
@@ -134,6 +144,7 @@ nav.top-menu {
 
 footer {
     background: white;
+    margin-top: 10rem;
 }
 
 nav.foot {
@@ -186,12 +197,13 @@ span.copyright {
     }
     .foot .foot-section {
         width: 100%;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
         padding: 0.5rem 2rem;
     }
-    .foot .foot-section:last-child {
+    /* .foot .foot-section:last-child {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    }
+    } 
+    */
     .foot-section .foot-title {
         display: block;
         position: relative;
