@@ -1,1 +1,90 @@
-<h1>Index</h1>
+<style>
+    html {
+        font-size: 10px;
+    }
+
+    /* Hero */
+    .hero {
+      background: #e5e5e5;
+      height: 600px;
+      padding: 0 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero_info {
+      width: 50%;
+      min-width: 250px;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero_info-title {
+      color: #000000;
+      font-weight: bold;
+      font-size: 4.6rem;
+      line-height: 63px;
+      max-width: 361px;
+    }
+
+    .hero_info-description {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 27px;
+      color: #000000;
+    }
+
+    .hero_info .hero_btn {
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: #FFF;
+      background: #3C2DFF;
+      border: 2px solid #3C2DFF;
+      border-radius: 4px;
+      width: 240px;
+      padding: 8px 18px;
+    }
+
+    .hero_info .hero_btn:hover {
+      color: #3C2DFF;
+      background: #fff;
+      border: 2px solid #3C2DFF; 
+    }
+
+    .hero_img {
+      width: 50%;
+      min-width: 250px;
+    }
+
+    .hero_img img {
+      width: 100%;
+    }
+
+    /*** Mobile styles ***/
+    @media (max-width: 768px) {
+      h1 {
+        color: red;
+      }
+    }
+</style>
+
+<main class="landing-container">
+  <section class="hero">
+    <div class="hero_info">
+      <h1 class="hero_info-title">The place where you get that job</h1>
+      <p class="hero_info-description">
+        With our Machine learning algorithm you will get that job in no time, We
+        promise you! Just give us the money and we will take care of it.
+      </p>
+      <a class="hero_btn" href="./singup">Create your account now</a>
+    </div>
+    <div class="hero_img">
+      <img src="./images/hero.png" alt="" />
+    </div>
+  </section>
+</main>
