@@ -9,7 +9,7 @@ header {
 }
 
 .container {
-    width: 80%;
+    max-width: 1335px;
     margin: 0 auto;
 }
 
