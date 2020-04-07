@@ -196,8 +196,8 @@ html {
   align-items: center;
 }
 
-.left-arrow,
-.right-arrow {
+.testimonials_left-arrow,
+.testimonials_right-arrow {
   width: 100%;
   flex: 1;
 }
