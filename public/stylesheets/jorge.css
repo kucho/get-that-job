@@ -2,14 +2,21 @@ html {
     font-size: 10px;
 }
 
-nav.top-menu {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    padding: 3.2rem 0;
-    justify-content: space-between;
+header {
+    background: white;
     position: sticky;
     z-index: 100;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav.top-menu {
+    display: flex;
+    padding: 3.2rem 0;
+    justify-content: space-between;
 }
 
 .top-menu .fa-bars {
@@ -125,11 +132,13 @@ nav.top-menu {
 
 /* Footer */
 
+footer {
+    background: white;
+}
+
 nav.foot {
     display: flex;
-    width: 80%;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .foot .foot-section {
@@ -159,6 +168,16 @@ nav.foot {
 
 .foot-links>li:last-child {
     color: #AD00FF;
+}
+
+span.copyright {
+    font-size: 1.4rem;
+    color: #73738D;
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(193, 187, 187, 0.77);
 }
 
 @media (max-width: 768px) {
@@ -197,3 +216,6 @@ nav.foot {
         transform: rotate(-90deg);
     }
 }
+
+
+/* Job-details */
