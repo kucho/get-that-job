@@ -207,7 +207,11 @@ span.copyright {
     }
     .foot .foot-section {
         width: 100%;
+<<<<<<< HEAD
         /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
+=======
+    /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
+>>>>>>> 596c66320273324fb17e78d73a6931d80be2de2b
         padding: 0.5rem 2rem;
     }
     /* .foot .foot-section:last-child {
