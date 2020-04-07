@@ -1,22 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Overpass:wght@300;700&display=swap");
+
 html {
   font-size: 10px;
 }
 
-body {
-  background: #f7fafc;
-}
-
-.landing-container {
+/* Borrare el container general, para poner uno en cada seccion */
+/* .landing-container {
   max-width: 1025px;
   margin: 0 auto;
-}
+} */
 
 /* Hero */
 .hero {
-  height: 600px;
+  background: #f7fafc;
+}
+
+.hero-container {
+  max-width: 1025px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .hero_info {
@@ -45,6 +50,7 @@ body {
 
 .hero_info .hero_btn {
   text-decoration: none;
+  text-align: center;
   font-weight: 800;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -73,17 +79,14 @@ body {
 /* Job list description */
 .job-list-desc {
   background: #3c2dff;
-  height: 394px;
-  position: absolute;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
 }
 
-.job-list-desc__main-wrapper {
+.job-list-desc_container {
   width: 1025px;
   margin: 0 auto;
+  padding: 54px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +105,7 @@ body {
 
 .job-list-desc_text {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 25px;
   margin-top: 20px;
 }
@@ -142,7 +145,7 @@ body {
 
 .job-list-desc_info-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2rem;
   color: #4a5568;
   grid-area: title;
 }
@@ -153,7 +156,7 @@ body {
 
 .job-list-desc_info-location span {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #000000;
 }
 
@@ -173,13 +176,171 @@ body {
   padding: 2px 5px;
   margin: 0 20px 0 12px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .job-list-desc_details span {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #718096;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fff;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 100%;
+  flex: 1;
+}
+
+.testimonials_container {
+  flex: 2;
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 88px 0 75px;
+}
+
+.testimonials_test {
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+  margin: 8px auto 20px;
+  max-width: 855px;
+}
+
+.testimonials_author {
+  display: block;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+.testimonials_author-job {
+  display: block;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+/* .testimonials::before {
+  content: url(../images/left-arrow.png);
+}
+
+.testimonials::after {
+  content: url(../images/right-arrow.png);
+} */
+
+/* Contact */
+.contact {
+  background: #f7fafc;
+}
+
+.contact_container {
+  max-width: 1025px;
+  margin: 0 auto;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.contact_info {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact_info-top span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1.08333px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.contact_info-title {
+  font-weight: bold;
+  font-size: 4.6rem;
+  letter-spacing: -1.5px;
+  color: #000000;
+}
+
+.contact_info-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #000000;
+}
+
+.contact_info-email,
+.contact_info-address {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.contact_form {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form input,
+.contact_form textarea {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #7a7a7a;
+  background: #ffffff;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  padding: 13px 24px;
+  margin-bottom: 16px;
+  max-width: 495.27px;
+}
+
+.contact_form textarea {
+  height: 150px;
+  margin-bottom: 19px;
+}
+
+.contact_btn {
+  width: 197px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 6px;
+}
+
+.contact_btn span {
+  margin-left: 20px;
+}
+
+.contact_btn:hover {
+  color: #000;
+  background: #fff;
+  border: 3px solid #000;
 }
 
 /*** Mobile styles ***/
