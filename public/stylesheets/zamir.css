@@ -212,7 +212,7 @@ html {
 .testimonials_test {
   font-weight: bold;
   font-size: 3.6rem;
-  line-height: 48px;
+  line-height: 4.8rem;
   text-align: center;
   letter-spacing: -1px;
   color: #000000;
@@ -223,7 +223,7 @@ html {
   display: block;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 32px;
+  line-height: 3.2rem;
   text-align: center;
   color: #000000;
 }
@@ -232,7 +232,7 @@ html {
   display: block;
   font-weight: 300;
   font-size: 1.6rem;
-  line-height: 24px;
+  line-height: 4.8rem;
   text-align: center;
   color: #000000;
 }
@@ -391,5 +391,20 @@ html {
 
   .job-list-desc_item {
     width: 100%;
+  }
+
+  /* Testimonials */
+  .testimonials_container {
+    padding: 30px 30px;
+  }
+
+  .testimonials_test {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .testimonials_author,
+  .testimonials_author-job {
+    line-height: 2.4rem;
   }
 }
