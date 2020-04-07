@@ -2,7 +2,7 @@
   <h1 class="job-list__title">Jobs for you</h1>
   <form class="job-list__form" action="" method="GET">
     <div class="job-list__form-left">
-      <div class="search-job">
+      <div class="search-job" tabindex="0">
         <input
           type="search"
           name="search_job"
@@ -11,7 +11,7 @@
           placeholder="Find that job!"
         />
       </div>
-      <div class="job-list__select">
+      <div class="job-list__select" tabindex="1">
         <select name="country" id="country">
           <option value="" disabled selected>Country</option>
           <option value="PE">Peru</option>
@@ -19,14 +19,14 @@
           <option value="AQP">Arequipa</option>
         </select>
       </div>
-      <div class="job-list__select">
+      <div class="job-list__select" tabindex="2">
         <select name="type" id="type">
           <option value="" disabled selected>Type</option>
           <option value="1">Urgent</option>
           <option value="2">Normal</option>
         </select>
       </div>
-      <div class="job-list__select">
+      <div class="job-list__select" tabindex="3">
         <select name="salary" id="salary">
           <option value="" disabled selected>Salary Range</option>
           <option value="1000">0 - 1,000</option>
@@ -35,7 +35,7 @@
           <option value="more">+3,000</option>
         </select>
       </div>
-      <div class="job-list__select">
+      <div class="job-list__select" tabindex="4">
         <select name="experience" id="experience">
           <option value="" disabled selected>Experience</option>
           <option value="1">< 1 year</option>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="job-list__select select-alt">
+    <div class="job-list__select select-alt" tabindex="5">
       <select name="orderby" id="orderby">
         <option value="" disabled selected>Recomended</option>
         <option value="newest">Newest</option>

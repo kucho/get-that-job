@@ -63,11 +63,13 @@ body {
   top: 1rem;
   position: absolute;
   pointer-events: none;
+  transition: all 0.2s linear;
 }
 
 .select-alt select {
   box-shadow: none;
   background-color: transparent;
+  padding-right: 30px;
 }
 
 .select-alt select:focus {
@@ -78,7 +80,7 @@ body {
   display: none;
 }
 
-.job-list__form:focus-within .job-list__select:after {
+.job-list__select:focus-within.job-list__select:after {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
