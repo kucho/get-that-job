@@ -212,7 +212,7 @@ html {
 .testimonials_test {
   font-weight: bold;
   font-size: 3.6rem;
-  line-height: 4.8rem;
+  line-height: 48px;
   text-align: center;
   letter-spacing: -1px;
   color: #000000;
@@ -223,7 +223,7 @@ html {
   display: block;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 3.2rem;
+  line-height: 32px;
   text-align: center;
   color: #000000;
 }
@@ -232,18 +232,10 @@ html {
   display: block;
   font-weight: 300;
   font-size: 1.6rem;
-  line-height: 4.8rem;
+  line-height: 48px;
   text-align: center;
   color: #000000;
 }
-
-/* .testimonials::before {
-  content: url(../images/left-arrow.png);
-}
-
-.testimonials::after {
-  content: url(../images/right-arrow.png);
-} */
 
 /* Contact */
 .contact {
@@ -350,7 +342,7 @@ html {
 
   /* Hero */
   .hero_container {
-    padding: 30px 30px;
+    padding: 50px 30px;
     flex-direction: column;
   }
 
@@ -366,6 +358,7 @@ html {
     font-size: 1.5rem;
     width: 80%;
     margin: 0 auto;
+    padding: 12px 0;
   }
 
   .hero_img {
@@ -376,7 +369,7 @@ html {
   .job-list-desc_container {
     flex-direction: column;
     justify-content: center;
-    padding: 30px 30px;
+    padding: 50px 30px;
   }
 
   .job-list-desc_text-wrapper {
@@ -395,16 +388,36 @@ html {
 
   /* Testimonials */
   .testimonials_container {
-    padding: 30px 30px;
+    padding: 50px 30px;
   }
 
   .testimonials_test {
     font-size: 2.2rem;
-    line-height: 2.5rem;
+    line-height: 25px;
   }
 
   .testimonials_author,
   .testimonials_author-job {
-    line-height: 2.4rem;
+    line-height: 24px;
+  }
+
+  /* Contact */
+  .contact_container {
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+
+  .contact_info {
+    margin-bottom: 20px;
+  }
+
+  .contact_btn {
+    margin: 0 auto;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    max-width: none;
+    padding: 9px 20px;
   }
 }
