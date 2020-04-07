@@ -115,6 +115,27 @@ body {
   display: block;
 }
 
+.job-list__select:hover .submenu li {
+  animation: 0.2s appear linear both;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    padding: 0 1.2rem;
+    height: 0;
+  }
+  50%{
+    opacity: 0;
+    padding: 0.45 1.2rem;
+  }
+  100%{
+    opacity: 1;
+    padding: 0.9rem 1.2rem;
+    height: fit-content;
+  }
+}
+
 .job-list__title {
   font-weight: bold;
   font-size: 3.2rem;
