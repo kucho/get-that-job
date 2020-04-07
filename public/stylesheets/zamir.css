@@ -4,12 +4,6 @@ html {
   font-size: 10px;
 }
 
-/* Borrare el container general, para poner uno en cada seccion */
-/* .landing-container {
-  max-width: 1025px;
-  margin: 0 auto;
-} */
-
 /* Hero */
 .hero {
   background: #f7fafc;
