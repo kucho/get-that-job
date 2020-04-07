@@ -1,7 +1,7 @@
 <div class="job-list">
   <h1 class="job-list__title">Jobs for you</h1>
-  <form class="job-list__form" action="" method="GET">
-    <div class="job-list__form-left">
+  <div class="job-list__filters">
+    <div class="job-list__filters-left">
       <div class="search-job">
         <input
           type="search"
@@ -11,49 +11,55 @@
         />
       </div>
       <div class="job-list__select" tabindex="1">
-        <select name="country" id="country">
-          <option value="" disabled selected>Country</option>
-          <option value="PE">Peru</option>
-          <option value="CO">Colombia</option>
-          <option value="AQP">Arequipa</option>
-        </select>
+        Country
+        <ul class="submenu">
+          <li>
+            <a href="#">Peru</a>
+          </li>
+          <li>
+            <a href="#">Colombia</a>
+          </li>
+          <li>
+            <a href="#">Arequipa</a>
+          </li>
+        </ul>
       </div>
       <div class="job-list__select" tabindex="2">
-        <select name="type" id="type">
-          <option value="" disabled selected>Type</option>
-          <option value="1">Urgent</option>
-          <option value="2">Normal</option>
-        </select>
+        Type
+        <ul class="submenu">
+          <li>Urgent</li>
+          <li>Normal</li>
+        </ul>
       </div>
       <div class="job-list__select" tabindex="3">
-        <select name="salary" id="salary">
-          <option value="" disabled selected>Salary Range</option>
-          <option value="1000">0 - 1,000</option>
-          <option value="2000">1,001 - 2,000</option>
-          <option value="3000">2,001 - 3,000</option>
-          <option value="more">+3,000</option>
-        </select>
+        Salary Range
+        <ul class="submenu">
+          <li><a href="#">0 - 1,000</a></li>
+          <li><a href="#">1,001 - 2,000</a></li>
+          <li><a href="#">2,001 - 3,000</a></li>
+          <li><a href="#">+3,000</a></li>
+        </ul>
       </div>
       <div class="job-list__select" tabindex="4">
-        <select name="experience" id="experience">
-          <option value="" disabled selected>Experience</option>
-          <option value="1">< 1 year</option>
-          <option value="2">1 - 2 years</option>
-          <option value="3">2 - 3 years</option>
-          <option value="more">+3 years</option>
-        </select>
+        Experience
+        <ul class="submenu">
+          <li><a href="#">< 1 year</a></li>
+          <li><a href="#">1 - 2 years</a></li>
+          <li><a href="#">2 - 3 years</a></li>
+          <li><a href="#">+3 years</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="job-list__select select-alt" tabindex="5">
-      <select name="orderby" id="orderby">
-        <option value="" disabled selected>Recomended</option>
-        <option value="newest">Newest</option>
-        <option value="highest_salary">Highest Salary</option>
-        <option value="lowest_salary">Lowest Salary</option>
-      </select>
+      Recomended
+      <ul class="submenu">
+        <li><a href="#">Newest</a></li>
+        <li><a href="#">Highest Salary</a></li>
+        <li><a href="#">Lowest Salary</a></li>
+      </ul>
     </div>
-  </form>
+  </div>
 
   <% for i in 0..7 do %> <%= erb :"../components/job_item" %> <% end %>
 
