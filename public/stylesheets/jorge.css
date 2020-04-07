@@ -167,13 +167,33 @@ nav.foot {
     }
     .foot .foot-section {
         width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0.5rem 2rem;
+    }
+    .foot .foot-section:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
     .foot-section .foot-title {
         display: block;
+        position: relative;
+        margin-bottom: 0;
     }
     .foot-section .foot-title::after {
         content: ">";
+        position: absolute;
+        right: 1rem;
         transform: rotate(90deg);
         text-align: end;
+        transition: .3s;
+    }
+    .foot-section .foot-links {
+        display: none;
+    }
+    .foot-section:hover .foot-links {
+        display: block;
+        margin-top: 1.5rem;
+    }
+    .foot-section:hover .foot-title::after {
+        transform: rotate(-90deg);
     }
 }
