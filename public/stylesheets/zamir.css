@@ -10,12 +10,9 @@ html {
 }
 
 .hero_container {
-  max-width: 1025px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
 }
 
 .hero_info {
@@ -78,9 +75,6 @@ html {
 }
 
 .job-list-desc_container {
-  width: 1025px;
-  margin: 0 auto;
-  padding: 54px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,8 +192,6 @@ html {
 
 .testimonials_container {
   flex: 3;
-  max-width: 1025px;
-  margin: 0 auto;
   padding: 88px 0 75px;
 }
 
@@ -237,12 +229,9 @@ html {
 }
 
 .contact_container {
-  max-width: 1025px;
-  margin: 0 auto;
   font-family: "Overpass", sans-serif;
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
 }
 
 .contact_info {
