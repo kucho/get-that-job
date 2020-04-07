@@ -8,15 +8,27 @@ html {
 
 body {
   background-color: #f7fafc;
-  padding: 3rem;
+}
+
+.main-px{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main-py{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main-mb{
+  margin-bottom: 2rem !important;
+}
+
+.main-mt{
+  margin-top: 2rem;
 }
 
 /* View CSS */
-
-.job-list {
-  max-width: 1031px;
-  margin: 0 auto;
-}
 
 .job-list__filters {
   display: flex;
@@ -80,6 +92,10 @@ body {
 
 .submenu li{
   padding: 0.9rem 1.2rem;
+}
+
+.submenu li:hover{
+  background-color:  rgba(25, 63, 230, 0.164);
 }
 
 .job-list__select:after {
