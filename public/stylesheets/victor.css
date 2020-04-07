@@ -1,0 +1,240 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Global CSS */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f7fafc;
+}
+
+/* View CSS */
+
+.job-list {
+  max-width: 1031px;
+  margin: 0 auto;
+}
+
+.job-list__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-list__form-left {
+  display: flex;
+}
+
+.job-list__form input,
+.job-list__form select {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border: 0;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.job-list__form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 100%;
+  padding: 11px 48px 11px 8px;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #4a5568;
+  text-align: left;
+}
+
+.job-list__select {
+  position: relative;
+}
+
+.job-list__select:after {
+  content: ">";
+  font: 2rem "Consolas", monospace;
+  font-weight: bold;
+  color: #4a5568;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 2rem;
+  top: 1rem;
+  position: absolute;
+  pointer-events: none;
+}
+
+.select-alt select {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.select-alt select:focus {
+  outline: none;
+}
+
+.job-list__form option[value=""][disabled] {
+  display: none;
+}
+
+.job-list__form:focus-within .job-list__select:after {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.job-list__title {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  margin-top: 64px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.search-job::before {
+  content: "\f002";
+  font-family: "FontAwesome";
+  color: #565d69;
+  position: absolute;
+  font-size: 1.8rem;
+  padding: 10px;
+  z-index: 1;
+}
+
+.search-job input {
+  position: relative;
+  padding: 11px 10px 11px 35px;
+  width: 283px;
+  height: 40px;
+}
+
+.search-job input::placeholder {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #4a5568;
+}
+
+/* Item CSS */
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  align-self: center;
+  margin: 20px 0px;
+  padding: 16px 20px;
+}
+
+.job-item__desc {
+  display: grid;
+  grid-template-areas:
+    "job-logo job-title"
+    "job-logo job-location";
+}
+
+.job-item__logo {
+  grid-area: job-logo;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.job-item__logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.job-item__title {
+  grid-area: job-title;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #4a5568;
+}
+
+.job-item__state {
+  font-size: 1rem;
+  line-height: normal;
+  color: #ffffff;
+  background-color: #ff0d0d;
+  text-transform: uppercase;
+  padding: 1px 3px;
+  margin-left: 12px;
+}
+
+.job-item__location {
+  grid-area: job-location;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #000000;
+}
+
+.job-item__flag {
+  width: 16px;
+  height: 16px;
+  margin: 0 9px;
+}
+
+.job-item__info {
+  display: flex;
+}
+
+.job-item__tags {
+  list-style: none;
+}
+
+.job-item__tags a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: rgba(60, 45, 255, 0.69);
+  padding: 2px 5px;
+}
+
+.job-item__tags li {
+  display: inline-flex;
+  margin: 0 5px;
+}
+
+.salary-icon {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #fefefe;
+  background-color: #45c8a1;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 7px;
+}
+
+.job-item__since {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #718096;
+}
+
+.main-button {
+  display: block;
+  width: fit-content;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #3c2dff;
+  border: 2px solid #3c2dff;
+  border-radius: 4px;
+  margin: 0 auto;
+}
