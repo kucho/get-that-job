@@ -371,4 +371,25 @@ html {
   .hero_img {
     width: 50%;
   }
+
+  /* Job list description */
+  .job-list-desc_container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px;
+  }
+
+  .job-list-desc_text-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .job-list-desc_items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-list-desc_item {
+    width: 100%;
+  }
 }
