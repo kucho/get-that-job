@@ -71,41 +71,115 @@ body {
 }
 
 /* Job list description */
-.job-list-description {
+.job-list-desc {
   background: #3c2dff;
-  color: #fff;
   height: 394px;
-  padding: 0 15%;
+  position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.job-list-description_text-wrapper {
-  width: 50%;
+.job-list-desc__main-wrapper {
+  width: 1025px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.job-list-description_title {
+.job-list-desc_text-wrapper {
+  color: #fff;
+  flex: 0 1 auto;
+  max-width: 507px;
+}
+
+.job-list-desc_title {
   font-weight: bold;
   font-size: 3.6rem;
 }
 
-.job-list-description_text {
+.job-list-desc_text {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  width: ;
+  margin-top: 20px;
 }
 
-.job-list-description_items {
-  width: 50%;
+.job-list-desc_items {
+  flex: 0 1 auto;
 }
 
-.job-list_item {
+.job-list-desc_item {
   background: #fff;
+  display: flex;
+  justify-content: space-between;
   width: 447px;
   height: 82px;
-  margin-bottom: 5px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.job-list-desc_item:last-of-type {
+  margin-bottom: 0;
+}
+
+.job-list-desc_info {
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "logo title"
+    "logo location";
+  grid-gap: 0 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.job-list-desc_info-logo {
+  grid-area: logo;
+}
+
+.job-list-desc_info-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4a5568;
+  grid-area: title;
+}
+
+.job-list-desc_info-location {
+  grid-area: location;
+}
+
+.job-list-desc_info-location span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+
+.job-list-desc_info-location img {
+  position: absolute;
+  margin-left: 9px;
+}
+
+.job-list-desc_details {
+  display: flex;
+  align-items: center;
+}
+
+.job-list-desc_details a {
+  background: rgba(60, 45, 255, 0.69);
+  color: #ffffff;
+  padding: 2px 5px;
+  margin: 0 20px 0 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.job-list-desc_details span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #718096;
 }
 
 /*** Mobile styles ***/
