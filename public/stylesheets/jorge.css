@@ -207,11 +207,7 @@ span.copyright {
     }
     .foot .foot-section {
         width: 100%;
-<<<<<<< HEAD
         /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
-=======
-    /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
->>>>>>> 596c66320273324fb17e78d73a6931d80be2de2b
         padding: 0.5rem 2rem;
     }
     /* .foot .foot-section:last-child {
@@ -246,6 +242,13 @@ span.copyright {
 
 /* Job-details */
 
+.jobdetailcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+    flex-wrap: wrap;
+}
+
 .jobdetail {
     width: 65%;
     display: block;
@@ -253,7 +256,7 @@ span.copyright {
 
 .seemore {
     font-size: 1.6rem;
-    color: #3C2DFF;
+    color: #3C2DFF !important;
 }
 
 .jobdetail-fecha {
@@ -319,7 +322,7 @@ span.copyright {
     background: #3C2DFF;
     font-weight: bold;
     font-size: 1.6rem;
-    color: white;
+    color: white !important;
 }
 
 .sharejob {
@@ -341,7 +344,7 @@ span.copyright {
 }
 
 .info-employer {
-    width: 20%;
+    width: 25%;
 }
 
 .card {
@@ -349,8 +352,81 @@ span.copyright {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 .card-icon {
-    width: 35%;
+    width: 26%;
+    margin-bottom: 1.2rem;
+}
+
+.cardtitle {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.card-body {
+    margin-bottom: 4.5rem;
+}
+
+.card-text {
+    margin-bottom: 0.6rem;
+    font-size: 1.6rem;
+}
+
+.card-footer {
+    padding: 1.6rem 0;
+    margin-top: 2.6rem;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
+}
+
+.card-footer>a {
+    font-size: 1.6rem;
+}
+
+.card-footer>a::after {
+    content: ">";
+    padding: 0 0.6rem;
+    margin-left: 1rem;
+    border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    .jobdetail {
+        width: 100%;
+        order: 3;
+    }
+    .info-employer {
+        width: 100%;
+    }
+    .card {
+        display: flex !important;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    .card-icon {
+        max-width: 5rem;
+    }
+    .infoempresa {
+        width: 30%;
+        margin-left: 1.6rem;
+    }
+    .card-body {
+        width: 65%;
+        margin-bottom: 0;
+        padding-left: 4rem;
+        text-align: left;
+    }
+    .card .btn-getjob {
+        margin: 1rem auto 0 auto !important;
+        width: 80%;
+    }
+    .card-footer {
+        width: 80%;
+    }
 }
