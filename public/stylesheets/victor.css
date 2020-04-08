@@ -447,6 +447,7 @@ body {
 
 .input__label input,
 .input__label textarea {
+  font-family: "Nunito", sans-serif;
   display: block;
   width: 100%;
   padding: 8px 12px;
@@ -458,13 +459,14 @@ body {
   min-height: 127px;
 }
 
-.input__label input::placeholder {
+.input__label input::placeholder, .input__label textarea::placeholder {
   font-size: 16px;
   line-height: 24px;
-  color: #bfbfbf;
+  color: #595959;
 }
 
 .input__radio {
+  font-family: "Nunito", sans-serif;
   margin: 16px auto;
 }
 
