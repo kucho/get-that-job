@@ -1266,6 +1266,11 @@ span.copyright {
   margin-top: 1.9rem;
 }
 
+.externallink {
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
 /*** Mobile styles ***/
 @media (max-width: 768px) {
   /* Hero */
