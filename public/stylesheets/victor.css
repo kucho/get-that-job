@@ -402,11 +402,11 @@ body {
 
 /* Sign up view CSS */
 
-.signup-form {
+.small-form {
   width: 256px;
 }
 
-.signup-form__forgot {
+.small-form__link {
   display: block;
   text-align: center;
   font-size: 14px;
