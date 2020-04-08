@@ -3,19 +3,20 @@
     <h1 class="form-title">
       Complete your signup
     </h1>
-    <form action="index" method="GET">
+    <form action="/jobs" method="GET">
       <label class="input__label">
         Name
-        <input type="text" name="name" id="name" placeholder="Large Input" />
+        <input type="text" name="name" id="name" placeholder="Large Input" required/>
         <span>Use your real first and last name</span>
       </label>
       <label class="input__label">
         Professional Description
         <input
           type="text"
-          name="name"
-          id="name"
+          name="professional_desc"
+          id="professional_desc"
           placeholder="e.g Software Engineer, Mememaster, Pokemaster"
+          required
         />
         <span>Short and specific text about what you do</span>
       </label>
@@ -24,8 +25,9 @@
         <textarea
           name="work_experience"
           id="work_experience"
-          placeholder="Worked 6 years in a bitcoin farm until I decided to
-              change my life...."
+          placeholder="Worked 6 years in a bitcoin farm until I decided to change my life...."
+          required
+          minlength="200"
         ></textarea>
         <span>
           Tells us about your work experience, what did you do before joining
@@ -37,8 +39,9 @@
         <textarea
           name="joke"
           id="joke"
-          placeholder="Q: Why do chemists enjoy working with ammonia?
-            A: Because it's pretty basic stuff."
+          placeholder="Q: Why do chemists enjoy working with ammonia?&#10;A: Because it's pretty basic stuff."
+          required
+          minlength="20"
         ></textarea>
         <span>
           Tells us about your work experience, what did you do before joining
@@ -80,7 +83,7 @@
         I wish to receive regular dad jokes in my email
       </label>
       <label class="input_checkbox">
-        <input type="checkbox" name="gift_data" id="gift_data" />
+        <input type="checkbox" name="gift_data" id="gift_data" required/>
         I wish that you sell my data and give me nothing in exchange
       </label>
       <input
