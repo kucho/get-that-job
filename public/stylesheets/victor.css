@@ -25,7 +25,11 @@ body {
 }
 
 .main-mt {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
+}
+
+.mt-6{
+  margin-top: 6rem !important;
 }
 
 /* job_list view CSS */
@@ -402,6 +406,14 @@ body {
 
 /* Sign up view CSS */
 
+.medium-form {
+  width: 404px;
+}
+
+.medium-form label{
+  color: #262626 !important;
+}
+
 .small-form {
   width: 256px;
 }
@@ -426,16 +438,24 @@ body {
   display: block;
   font-size: 14px;
   line-height: 22px;
-  color: #262626;
   margin: 16px auto;
 }
 
-.input__label input {
+.input__label span{
+  color: #8C8C8C;
+}
+
+.input__label input,
+.input__label textarea {
   display: block;
   width: 100%;
   padding: 8px 12px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
+}
+
+.input__label textarea {
+  min-height: 127px;
 }
 
 .input__label input::placeholder {
@@ -444,7 +464,30 @@ body {
   color: #bfbfbf;
 }
 
-.submit_button {
+.input__radio {
+  margin: 16px auto;
+}
+
+.input__radio span {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.input__radio label, .input_checkbox {
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 12px;
+  color: #595959;
+}
+
+.input_checkbox{
+  margin: 16px auto;
+  display: block;
+}
+
+.submit-button {
   display: block;
   width: 100%;
   font-size: 16px;
@@ -455,4 +498,16 @@ body {
   height: 40px;
   box-shadow: 0;
   border: none;
+}
+
+.submit-button__alt {
+  width: 143px;
+  color: #3c2dff;
+  border: 1px solid #3c2dff;
+  background-color: #fefefe;
+}
+
+.submit-button__alt:hover {
+  background-color: #3c2dff;
+  color: #fefefe;
 }
