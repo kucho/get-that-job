@@ -535,7 +535,7 @@ nav.top-menu {
 }
 
 .signin-btn {
-  border: 1px solid black;
+  border: 2px solid black;
   text-transform: uppercase;
   padding: 0.4rem 1.2rem;
   border-radius: 0.4rem;
@@ -558,8 +558,8 @@ nav.top-menu {
   border-radius: 0.4rem;
   font-weight: 800;
   font-size: 1.3rem;
-  border: 1px solid #3c2dff;
-  color: #3c2dff;
+  border: 2px solid #3c2dff;
+  color: #3c2dff !important;
 }
 
 .createaccount-btn:hover {
@@ -831,6 +831,7 @@ span.copyright {
 }
 
 .cardtitle {
+  display: block;
   font-weight: bold;
   font-size: 2.8rem;
   margin-bottom: 1.2rem;
