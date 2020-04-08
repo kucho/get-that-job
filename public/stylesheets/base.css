@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito|Overpass:400,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Overpass:wght@300;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,8 +7,10 @@
   padding: 0;
 }
 
-html{
+html {
   height: 100%;
+  font-size: 10px;
+  background-color: #f7fafc;
 }
 
 a,
@@ -21,12 +24,43 @@ body {
   height: 100%;
 }
 
-.main-wrap{
+.main-wrap {
   min-height: calc(100vh - 49.7rem);
 }
 
+.container {
+  max-width: 1031px;
+  margin: 0 auto;
+}
+
+.main-px {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main-py {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main-mb {
+  margin-bottom: 2rem !important;
+}
+
+.main-mt {
+  margin-top: 2rem !important;
+}
+
+.mt-6 {
+  margin-top: 6rem !important;
+}
+
 @media (max-width: 768px) {
-  .main-wrap{
+  html {
+    font-size: 8.5px !important;
+  }
+  
+  .main-wrap {
     min-height: calc(100vh - 42rem);
   }
 }
