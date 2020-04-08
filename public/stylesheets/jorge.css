@@ -408,16 +408,17 @@ span.copyright {
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 2rem;
+        justify-content: center;
     }
     .card-icon {
         max-width: 5rem;
     }
     .infoempresa {
         width: 30%;
-        margin-left: 1.6rem;
+        /* margin-left: 1.6rem; */
     }
     .card-body {
-        width: 65%;
+        width: 40%;
         margin-bottom: 0;
         padding-left: 4rem;
         text-align: left;
