@@ -1,0 +1,93 @@
+<div class="container mt-6">
+  <div class="medium-form">
+    <h1 class="form-title">
+      Complete your signup
+    </h1>
+    <form action="index" method="GET">
+      <label class="input__label">
+        Name
+        <input type="text" name="name" id="name" placeholder="Large Input" />
+        <span>Use your real first and last name</span>
+      </label>
+      <label class="input__label">
+        Professional Description
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="e.g Software Engineer, Mememaster, Pokemaster"
+        />
+        <span>Short and specific text about what you do</span>
+      </label>
+      <label class="input__label">
+        Work Experience
+        <textarea
+          name="work_experience"
+          id="work_experience"
+          placeholder="Worked 6 years in a bitcoin farm until I decided to
+              change my life...."
+        ></textarea>
+        <span>
+          Tells us about your work experience, what did you do before joining
+          this top community?
+        </span>
+      </label>
+      <label class="input__label">
+        Tell us a joke
+        <textarea
+          name="joke"
+          id="joke"
+          placeholder="Q: Why do chemists enjoy working with ammonia?
+            A: Because it's pretty basic stuff."
+        ></textarea>
+        <span>
+          Tells us about your work experience, what did you do before joining
+          this top community?
+        </span>
+      </label>
+      <div class="input__radio">
+        <span>Work Type preference</span>
+        <label>
+          <input
+            type="radio"
+            name="work_type"
+            id="full_time"
+            value="full_time"
+            checked
+          />
+          Full Time
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="work_type"
+            id="part_time"
+            value="part_time"
+          />
+          Part-Time
+        </label>
+        <label>
+          <input type="radio" name="work_type" id="contract" value="contract" />
+          Contract
+        </label>
+        <label>
+          <input type="radio" name="work_type" id="for_free" value="for_free" />
+          For Free
+        </label>
+      </div>
+      <label class="input_checkbox">
+        <input type="checkbox" name="want_jokes" id="want_jokes" />
+        I wish to receive regular dad jokes in my email
+      </label>
+      <label class="input_checkbox">
+        <input type="checkbox" name="gift_data" id="gift_data" />
+        I wish that you sell my data and give me nothing in exchange
+      </label>
+      <input
+        class="submit-button submit-button__alt"
+        type="submit"
+        value="Create Account"
+      />
+    </form>
+  </div>
+</div>
