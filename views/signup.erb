@@ -1,0 +1,44 @@
+<div class="signup-form">
+  <h1 class="form__title">Sign Up</h1>
+  <form action="signup2" method="get">
+    <label class="input__label">
+      Email
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="youremail@email.com"
+        required
+      />
+    </label>
+    <label class="input__label">
+      Password
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="********"
+        required
+      />
+    </label>
+    <label class="input__label">
+      Confirm Password
+      <input
+        type="confirm_pw"
+        name="confirm_pw"
+        id="confirm_pw"
+        placeholder="********"
+        required
+      />
+    </label>
+    <input class="submit_button" type="submit" value="Submit" />
+  </form>
+  <a href="#" class="signup-form__forgot">Forgot password?</a>
+</div>
+<style>
+  .main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
